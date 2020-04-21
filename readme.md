@@ -22,7 +22,11 @@ This folder contains the FOM of CSUNet.
 # python files
 
 % trn.py is the run file to train the model. % test.py is the testing file for evaluation % config.py is configure file.
-% model.py has model definition model definition and % myDataset.py is data iterator.
+% model.py has model definition and % myDataset.py is data iterator.
+
+# Performance
+
+
 
 
 
