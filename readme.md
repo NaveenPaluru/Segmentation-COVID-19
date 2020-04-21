@@ -30,4 +30,10 @@ Confusion Matrix Showing the Performance of CSUNet on Test Set 2 : 704 Slices
 ![test1VOL](https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/test1VOL.png)
 
 
+Any difficulty, please raise an issue or contact :
 
+Dr. Phannendra  K. Yalavarthy 
+Assoc.Prof, CDS, IISC Bangalore, email : yalavarthy@iisc.ac.in
+
+Naveen Paluru
+(PhD) CDS, MIG, IISc Bangalore,  email : naveenp@iisc.ac.in
