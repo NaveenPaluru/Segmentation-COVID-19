@@ -3,37 +3,37 @@
 
 Folders and Files Descritions
 
-# data preparation
+## data preparation
 
 This folder contains two files : dataPrepCTSlice.m  for preparing training data and test set 1 and  dataPrepCTVolume.m
 for preparing test set 2. These files contain all necessary references for the datasets.
 
-Dataset : http://medicalsegmentation.com/covid19/
+Dataset : [Link](http://medicalsegmentation.com/covid19/)
 
-# savedModels
+## savedModels
 
-Download the trained model CSUNet_100_model.pth from the google drive link below and place it inside the subfolder in the savedModels. Trained model is at https://drive.google.com/open?id=1ak-tFBpl0ulj3tigFhzLwQPAsP7c9kZs 
+Download the trained model CSUNet_100_model.pth from the google drive link below and place it inside the subfolder in the savedModels. Trained model is [Lihere](https://drive.google.com/open?id=1ak-tFBpl0ulj3tigFhzLwQPAsP7c9kZs) 
 
 
-# results
+## results
 
 This folder contains the FOM of CSUNet.
 
-# python files
+## python files
 
 % trn.py is the run file to train the model. % test.py is the testing file for evaluation % config.py is configure file.
 % model.py has model definition and % myDataset.py is data iterator.
 
-# Performance
+## Performance
 
 Confusion Matrix Showing the Performance of CSUNet on Test Set 2 : 704 Slices
 ![test1VOL](https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/test1VOL.png)
 
 
-Any difficulty, please raise an issue or contact :
+### Any difficulty, please raise an issue or contact :
 
-Dr. Phannendra  K. Yalavarthy 
-Assoc.Prof, CDS, IISC Bangalore, email : yalavarthy@iisc.ac.in
+*Dr. Phannendra  K. Yalavarthy 
+Assoc.Prof, CDS, IISC Bangalore, email : yalavarthy@iisc.ac.in*
 
-Naveen Paluru
-(PhD) CDS, MIG, IISc Bangalore,  email : naveenp@iisc.ac.in
+*Naveen Paluru
+(PhD) CDS, MIG, IISc Bangalore,  email : naveenp@iisc.ac.in*
