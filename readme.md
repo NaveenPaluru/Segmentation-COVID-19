@@ -5,7 +5,7 @@ Folders and Files Descritions
 
 # data preparation
 
-This folder contains two files : dataPrepCTSlice.m  for preparimg training data and test set 1 and  dataPrepCTVolume.m
+This folder contains two files : dataPrepCTSlice.m  for preparing training data and test set 1 and  dataPrepCTVolume.m
 for preparing test set 2. These files contain all necessary references for the datasets.
 
 Dataset Link : http://medicalsegmentation.com/covid19/
