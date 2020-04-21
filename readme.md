@@ -24,10 +24,15 @@ This folder contains the FOM of CSUNet.
 % trn.py is the run file to train the model. % test.py is the testing file for evaluation % config.py is configure file.
 % model.py has model definition and % myDataset.py is data iterator.
 
-## Performance
+## Quantitative Performance
 
 Confusion Matrix Showing the Performance of CSUNet on Test Set 2 : 704 Slices
 ![test1VOL](https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/test1VOL.png)
+
+## Qualitative Performance
+
+ Performance of CSUNet on one of the slices in Test Set 2 .
+![Visual](https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/Visual.png)
 
 
 #### Any difficulty, please raise an issue or contact :
