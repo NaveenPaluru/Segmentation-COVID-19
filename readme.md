@@ -1,5 +1,5 @@
 
-Segmentation of Abnormalities in COVID-19-CT Images by Cost Sensitive UNet (CSUNet)
+# Segmentation of Abnormalities in COVID-19-CT Images by Cost Sensitive UNet (CSUNet)
 
 Folders and Files Descritions
 
@@ -12,19 +12,17 @@ Dataset Link : http://medicalsegmentation.com/covid19/
 
 # savedModels
 
-Download the trained model CSUNet_100_model.pth from google drive link below and place it inside the subfolder in savedModels.
-https://drive.google.com/open?id=1ak-tFBpl0ulj3tigFhzLwQPAsP7c9kZs
+Download the trained model CSUNet_100_model.pth from the google drive link below and place it inside the subfolder in the savedModels. https://drive.google.com/open?id=1ak-tFBpl0ulj3tigFhzLwQPAsP7c9kZs
 
 
 # results
 
 This folder contains the FOM of CSUNet.
 
-% trn.py      - run file to train the model
-% test.py     - testing file for evaluation
-% config.py   - utils like file.
-% model.py    - model definition
-% myDataset.py- data iterator
+# python files
+
+% trn.py is the run file to train the model. % test.py is the testing file for evaluation % config.py is configure file.
+% model.py has model definition model definition and % myDataset.py is data iterator.
 
 
 
