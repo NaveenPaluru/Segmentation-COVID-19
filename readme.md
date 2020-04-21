@@ -26,7 +26,8 @@ This folder contains the FOM of CSUNet.
 
 # Performance
 
-
+Confusion Matrix Showing the Performance of CSUNet on Test Set 2 : 704 Slices
+![test1VOL](https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/test1VOL.png)
 
 
 
