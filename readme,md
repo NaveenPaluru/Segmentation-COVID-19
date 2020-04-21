@@ -20,5 +20,11 @@ https://drive.google.com/open?id=1ak-tFBpl0ulj3tigFhzLwQPAsP7c9kZs
 
 This folder contains the FOM of CSUNet.
 
+% trn.py      - run file to train the model
+% test.py     - testing file for evaluation
+% config.py   - utils like file.
+% model.py    - model definition
+% myDataset.py- data iterator
+
 
 
