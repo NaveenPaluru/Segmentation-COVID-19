@@ -1,1 +1,9 @@
 
+% Data Preparation for Test Set 2
+
+% Data Taken from: http://medicalsegmentation.com/covid19/
+% Segmentation dataset nr. 2 (13th April) Image volumes (308 Mb) – 9 volumes, total of > 800 slices
+%                                         Covid19 masks (0.3 Mb) – includes  > 350 annotated slices
+%                                         Lung masks of (1.0 Mb) – includes  > 700 annotated slices
+
+% lung masks by Johannes Hofmanninger:  https://github.com/JoHof/lungmask
