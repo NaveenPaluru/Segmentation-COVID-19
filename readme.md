@@ -12,7 +12,7 @@ Dataset : [Link](http://medicalsegmentation.com/covid19/)
 
 ## savedModels
 
-Download the trained model CSUNet_100_model.pth from the google drive link below and place it inside the subfolder in the savedModels. Trained model is [Lihere](https://drive.google.com/open?id=1ak-tFBpl0ulj3tigFhzLwQPAsP7c9kZs) 
+Download the trained model CSUNet_100_model.pth from the google drive link below and place it inside the subfolder in the savedModels. Trained model is [here](https://drive.google.com/open?id=1ak-tFBpl0ulj3tigFhzLwQPAsP7c9kZs) 
 
 
 ## results
@@ -30,10 +30,12 @@ Confusion Matrix Showing the Performance of CSUNet on Test Set 2 : 704 Slices
 ![test1VOL](https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/test1VOL.png)
 
 
-### Any difficulty, please raise an issue or contact :
+#### Any difficulty, please raise an issue or contact :
 
 *Dr. Phannendra  K. Yalavarthy 
+
 Assoc.Prof, CDS, IISC Bangalore, email : yalavarthy@iisc.ac.in*
 
 *Naveen Paluru
+
 (PhD) CDS, MIG, IISc Bangalore,  email : naveenp@iisc.ac.in*
