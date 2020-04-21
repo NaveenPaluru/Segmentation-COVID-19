@@ -34,7 +34,7 @@ Confusion Matrix Showing the Performance of CSUNet on Test Set 2 : 704 Slices
 
 *Dr. Phannendra  K. Yalavarthy* 
 
-*Assoc.Prof, CDS, IISC Bangalore, email : yalavarthy@iisc.ac.in*
+*Assoc.Prof, CDS, IISc Bangalore, email : yalavarthy@iisc.ac.in*
 
 *Naveen Paluru*
 
