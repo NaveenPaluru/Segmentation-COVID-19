@@ -8,11 +8,11 @@ Folders and Files Descritions
 This folder contains two files : dataPrepCTSlice.m  for preparing training data and test set 1 and  dataPrepCTVolume.m
 for preparing test set 2. These files contain all necessary references for the datasets.
 
-Dataset Link : http://medicalsegmentation.com/covid19/
+Dataset : http://medicalsegmentation.com/covid19/
 
 # savedModels
 
-Download the trained model CSUNet_100_model.pth from the google drive link https://drive.google.com/open?id=1ak-tFBpl0ulj3tigFhzLwQPAsP7c9kZs and place it inside the subfolder in the savedModels. 
+Download the trained model CSUNet_100_model.pth from the google drive link below and place it inside the subfolder in the savedModels. Trained model is at https://drive.google.com/open?id=1ak-tFBpl0ulj3tigFhzLwQPAsP7c9kZs 
 
 
 # results
