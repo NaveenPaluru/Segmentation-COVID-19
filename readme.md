@@ -5,7 +5,7 @@ Folders and Files Descritions
 
 ## data preparation
 
-This folder contains two files : dataPrepCTSlice.m  for preparing training data and test set 1 and  dataPrepCTVolume.m
+This folder contains two files : **dataPrepCTSlice.m**  for preparing training data and test set 1, **dataPrepCTVolume.m**
 for preparing test set 2. These files contain all necessary references for the datasets.
 
 Dataset : [Link](http://medicalsegmentation.com/covid19/)
@@ -21,8 +21,7 @@ This folder contains the FOM of CSUNet.
 
 ## python files
 
-% trn.py is the run file to train the model. % test.py is the testing file for evaluation % config.py is configure file.
-% model.py has model definition and % myDataset.py is data iterator.
+% **trn.py** is the run file to train the model. % **test.py** is the testing file for evaluation % **config.py** is  configure file.% **model.py** has model definition and % **myDataset.py** is data iterator.
 
 ## Quantitative Performance
 
