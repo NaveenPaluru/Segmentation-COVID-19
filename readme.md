@@ -27,12 +27,16 @@ This folder contains the FOM of CSUNet.
 ## Quantitative Performance
 
 Confusion Matrix Showing the Performance of CSUNet on Test Set 2 : 704 Slices
-![test1VOL](https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/test1VOL.png)
+<p align="center">
+  <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/test1VOL.png">
+</p>
 
 ## Qualitative Performance
 
  Performance of CSUNet on one of the slices in Test Set 2 .
-![Visual](https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/Visual.png)
+<p align="center">
+  <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/Visual.png">
+</p>
 
 
 #### Any difficulty, please raise an issue or contact :
@@ -45,6 +49,4 @@ Confusion Matrix Showing the Performance of CSUNet on Test Set 2 : 704 Slices
 
 *(PhD) CDS, MIG, IISc Bangalore,  email : naveenp@iisc.ac.in*
 
-<p align="center">
-  <img width="460" height="300" src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/Visual.png">
-</p>
+
