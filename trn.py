@@ -123,7 +123,7 @@ for j in range(config.epochs):
         loss   = criterion(output, imtruth.squeeze())
 	
         # Apply weights per sample 
-        loss   = loss * wImg
+        loss   = loss * wImg.squeeze()
         
         #compute acc
         out    = F.softmax(output,dim=1)
