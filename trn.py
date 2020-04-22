@@ -101,7 +101,8 @@ for j in range(config.epochs):
         w2 = np.max([w1,w2,w3])/(w2+np.finfo('float').eps)
         w3 = np.max([w1,w2,w3])/(w3+np.finfo('float').eps)
         if len(ind1)!=0:
-            wImg[ind1] = w1 
+	    # As background pixels are more, w1 will be very small give a small boost 
+            wImg[ind1] = w1 * 10 
         if len(ind2)!=0:
             wImg[ind2] = w2     
         if len(ind3)!=0:
