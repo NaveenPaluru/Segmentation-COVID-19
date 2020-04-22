@@ -1,22 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Wed Apr 15 12:49:46 2020
-
-@author: naveen_p
-"""
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Mar 28 08:52:49 2020
-
-@author: phdiisc
-"""
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
 Created on Mon Mar 23 12:04:43 2020
 
 @author: naveenpaluru
@@ -75,11 +59,11 @@ def test(directory):
         images,imtruth = Variable(data[0]),Variable(data[1])
         # ckeck if gpu is available
         if config.gpu == True:
-            images  = Variable(images.cuda(config.gpuid))
-            imtruth = Variable(imtruth.cuda(config.gpuid))
+            images  = images.cuda( config.gpuid)
+            imtruth = imtruth.cuda(config.gpuid)
         # make forward pass      
         output = F.softmax(net(images),dim=1)
-        _, pred= torch.max(output   ,dim=1)  
+        _, pred= torch.max(output,dim=1)  
         if i==0:
             tmp = pred.cpu().detach()
             tmpl=imtruth.cpu().detach()
