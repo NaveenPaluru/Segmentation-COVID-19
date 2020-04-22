@@ -31,13 +31,10 @@ saveDir='savedModels/'
 saveDir2 = 'UNet_predictions/'
 cwd=os.getcwd()
 directory=saveDir+datetime.now().strftime("%d%b_%I%M%P_")+'model'
-directory2 = saveDir2+datetime.now().strftime("%d%b_%I%M%P_")+'model'
 print('Model will be saved to  :', directory)
 
 if not os.path.exists(directory):
     os.makedirs(directory)
-if not os.path.exists(directory2):
-    os.makedirs(directory2)
 
 config  = Config()
 
@@ -164,22 +161,16 @@ for j in range(config.epochs):
     # print loss after every epoch
     
     print('Training - Epoch {}/{}, loss:{:.4f}, acc:{:.4f}, sens:{:.4f}, spec:{:.4f} '.format(j+1, 
-          config.epochs, runtrainloss/len(trainloader), acc[j], sens[j], spec[j]))
+                       config.epochs,  runtrainloss/len(trainloader),  acc[j],  sens[j], spec[j]))
     train_loss.append(runtrainloss/len(trainloader))
     
-    tmp  = tmp.numpy().astype(np.float64)  
-    tmpl = tmpl.numpy().astype(np.float64)  
-    os.chdir(directory2)
-    scipy.io.savemat("pred_"+str(j+1)+"_deep.mat", {'pred':tmp})
-    scipy.io.savemat("labl_"+str(j+1)+"_deep.mat", {'pred':tmpl})
-    
-    
+    #tmp  = tmp.numpy().astype(np.float64)  
+    #tmpl = tmpl.numpy().astype(np.float64)  
+        
     # Take a step for scheduler
-    scheduler.step()
-    
+    scheduler.step()    
     
     #save the model   
-    os.chdir('../../')
     torch.save(net.state_dict(),os.path.join(directory,"CSUNet_" + str(j+1) +"_model.pth"))
 	    
 
