@@ -75,7 +75,7 @@ optimizer = optim.SGD(net.parameters(), lr=0.01)
 scheduler = lr_scheduler.StepLR(optimizer, step_size=45, gamma=0.1)
 
 # Define the loss function
-criterion = nn.CrossEntropyLoss()
+criterion = nn.CrossEntropyLoss(reduction='none')
 
 
 # Iterate over the training dataset
@@ -119,9 +119,10 @@ for j in range(config.epochs):
         # make forward pass      
         output = net(images)
        
-        #compute loss
+        #compute loss per sample
         loss   = criterion(output, imtruth.squeeze())
-        # Apply weights
+	
+        # Apply weights per sample 
         loss   = loss * wImg
         
         #compute acc
