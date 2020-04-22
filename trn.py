@@ -28,7 +28,6 @@ from torch.optim import lr_scheduler
 print ('*******************************************************')
 start_time=time.time()
 saveDir='savedModels/'
-saveDir2 = 'UNet_predictions/'
 cwd=os.getcwd()
 directory=saveDir+datetime.now().strftime("%d%b_%I%M%P_")+'model'
 print('Model will be saved to  :', directory)
@@ -133,8 +132,7 @@ for j in range(config.epochs):
         loss.mean().backward()
         
         # Accumulate loss for current minibatch
-        runtrainloss += loss.mean().item()
-        
+        runtrainloss += loss.mean().item()        
         
         # update the parameters
         optimizer.step()       
