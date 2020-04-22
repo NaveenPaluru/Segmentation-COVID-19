@@ -12,7 +12,7 @@ Dataset : [Link](http://medicalsegmentation.com/covid19/)
 
 ## savedModels
 
-Download the trained model CSUNet_100_model.pth from the google drive link below and place it inside the subfolder in the savedModels. Trained model is [here](https://drive.google.com/open?id=1ak-tFBpl0ulj3tigFhzLwQPAsP7c9kZs) 
+Download the trained model CSUNet_100_model.pth from the google drive link below and place it inside the subfolder in the savedModels. Trained model is [here](https://drive.google.com/drive/folders/1wm3m-0Upjk6g8jxnNEIBWK686kf2SJZm) 
 
 
 ## results
