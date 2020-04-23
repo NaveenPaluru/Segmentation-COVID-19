@@ -34,7 +34,7 @@ Confusion Matrix Showing the Performance of CSUNet on Test Set 2 : 704 Slices
 
  Performance of CSUNet on one of the slices in Test Set 2 .
 <p align="center">
-  <img width = 450 height = 250 src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/Visual.png">
+  <img width = 500 height = 250 src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/Visual.png">
 </p>
 
 
