@@ -49,7 +49,8 @@ Confusion Matrix Showing the Performance of UNet on Test Set 2 : 704 Slices
 *(PhD) CDS, MIG, IISc Bangalore,  email : naveenp@iisc.ac.in*
 
 #### References
-1.  O. Ronneberger, P. Fischer, and T. Brox, “U-Net: Convolutional networks for biomedical image segmentation,” in International Conference on Medical image computing and computer-assisted intervention. Springer, 2015, pp. 234–241.
+1.  O. Ronneberger, P. Fischer, and T. Brox, “U-Net: Convolutional networks for biomedical image segmentation,” in  International Conference on Medical image computing and computer-assisted intervention. Springer, 2015, 
+pp. 234–241.
 
 
 
