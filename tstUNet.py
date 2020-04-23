@@ -80,7 +80,7 @@ if __name__ == '__main__':
     saveDir='./savedModels/'
         
     # if want to test on a specific model
-    directory=saveDir+"21Apr_1247am_model/"+ "CSUNet_100_model.pth"
+    directory=saveDir+"21Apr_1247am_model/"+ "UNet_100_model.pth"
     print('Loading the Model : ', directory)
     
     tmp, tmpl = test(directory)
