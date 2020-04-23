@@ -170,7 +170,7 @@ for j in range(config.epochs):
     scheduler.step()    
     
     #save the model   
-    torch.save(net.state_dict(),os.path.join(directory,"CSUNet_" + str(j+1) +"_model.pth"))
+    torch.save(net.state_dict(),os.path.join(directory,"UNet_" + str(j+1) +"_model.pth"))
 	    
 
 # plot the training loss
