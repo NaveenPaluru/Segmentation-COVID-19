@@ -25,14 +25,14 @@ This folder contains the FOM of UNet.
 
 ## Quantitative Performance of UNet
 
-Confusion Matrix Showing the Performance of CSUNet on Test Set 2 : 704 Slices
+Confusion Matrix Showing the Performance of UNet on Test Set 2 : 704 Slices
 <p align="center">
   <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/test1VOL.png">
 </p>
 
 ## Qualitative Performance of UNet
 
- Performance of CSUNet on one of the slices in Test Set 2 .
+ Performance of UNet on one of the slices in Test Set 2 .
 <p align="center">
   <img width = 500 height = 250 src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/Visual.png">
 </p>
