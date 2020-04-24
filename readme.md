@@ -21,7 +21,7 @@ This folder contains the FOM of UNet and ENet.
 
 ## python files
 
-% **trnUNet.py** is the run file to train the UNet model. % **tstUNet.py** is the testing file for evaluation with UNet % **config.py** is  configure file.% **model.py** has model definition for UNet, **trnENet.py** is the run file to train the ENet model. % **tstENet.py** is testing file for evaluation with ENet  and % **myDataset.py** is data iterator.
+**trnUNet.py** is the run file to train the UNet model. **tstUNet.py** is the testing file for evaluation with UNet **config.py** is  configure file. **model.py** has model definition for UNet, **trnENet.py** is the run file to train the ENet model. **tstENet.py** is testing file for evaluation with ENet, **enet.py** has model definition for enet and **myDataset.py** is data iterator.
 
 ## Quantitative Performance of UNet
 
