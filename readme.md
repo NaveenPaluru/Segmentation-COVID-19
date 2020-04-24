@@ -1,5 +1,5 @@
 
-# Segmentation of the Abnormalities in COVID-19-CT Images by Cost Sensitive Convolutional Neural Networks (CNNs)
+# Segmentation of the Abnormalities in  COVID-19-CT Images  by  Cost Sensitive Convolutional Neural Networks (CNNs)
 
 Folders and Files Descritions
 
