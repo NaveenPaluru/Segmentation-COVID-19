@@ -21,7 +21,7 @@ This folder contains the FOM of UNet and ENet.
 
 ## python files
 
-% **trnUNet.py** is the run file to train the UNet model. % **tstUNet.py** is the testing file for evaluation with UNet % **config.py** is  configure file.% **model.py** has model definition for UNet, **trnENet.py** is the run file to train the ENet model. % **tstENet.py** is the testing file for evaluation with ENet  and % **myDataset.py** is data iterator.
+% **trnUNet.py** is the run file to train the UNet model. % **tstUNet.py** is the testing file for evaluation with UNet % **config.py** is  configure file.% **model.py** has model definition for UNet, **trnENet.py** is the run file to train the ENet model. % **tstENet.py** is testing file for evaluation with ENet  and % **myDataset.py** is data iterator.
 
 ## Quantitative Performance of UNet
 
@@ -39,7 +39,7 @@ Confusion Matrix Showing the Performance of UNet on Test Set 2 : 704 Slices
 
 ## Qualitative Performance of UNet and ENet
 
- Performance of UNet on one of the slices in Test Set 2 .
+ Performance of ENet on one of the slices in Test Set 2 .
 <p align="center">
   <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/Visual.png">
 </p>
