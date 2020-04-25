@@ -44,7 +44,7 @@ Confusion Matrix Showing the Performance of ENet on Test Set 2 : 704 Slices
 </p>
 
 
-#### Any difficulty, please raise an issue or contact :
+#### Any query, please raise an issue or contact :
 
 *Dr. Phannendra  K. Yalavarthy* 
 
