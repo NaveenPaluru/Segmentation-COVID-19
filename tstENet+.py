@@ -32,15 +32,24 @@ def test(directory):
     config  = Config()
     
     # load the  data here .....................................
-    # load the testimages and test labels in form of numpy arrays
+    # load the testimages and test labels in form of numpy arrays andd combie both test sets.
     
     data = scipy.io.loadmat('testVOL.mat')
     inp  = data['IMG']
     lab  = data['LAB']
-    
-    # 704 be replaced by 30 for test.mat
     testinp =np.reshape( np.transpose(inp,(2,0,1)),(704,512,512,1))
     testlab =np.reshape( np.transpose(lab,(2,0,1)),(704,512,512,1))
+    data = scipy.io.loadmat('test.mat')
+    inp1 = data['inp']
+    lab1 = data['lab']
+    testinp1 =np.reshape( np.transpose(inp1,(2,0,1)),(30,512,512,1))
+    testlab1 =np.reshape( np.transpose(lab1,(2,0,1)),(30,512,512,1))
+    # Removing Augmented Test Samples.
+    testinp1 = testinp1[0:30:3,:,:,:]
+    testlab1 = testlab1[0:30:3,:,:,:]
+    
+    testinp = np.concatenate((testinp,testinp1),axis=0)
+    testlab = np.concatenate((testlab,testlab1),axis=0)
     
     transform = transforms.Compose([transforms.ToTensor(),
                 ])        
@@ -51,8 +60,7 @@ def test(directory):
     
            
     if config.gpu == True:
-        net.cuda(config.gpuid).eval()   
-        
+        net.cuda(config.gpuid).eval()           
     
     for i,data in tqdm.tqdm(enumerate(testloader)):             
         # start iterations
@@ -80,7 +88,7 @@ if __name__ == '__main__':
     saveDir='./savedModels/'
         
     # if want to test on a specific model
-    directory=saveDir+"24Apr_0640pm_model/"+ "ENet_100_model.pth"
+    directory=saveDir+"24Apr_0640pm_model/"+ "ENetPlus_100_model.pth"
     print('Loading the Model : ', directory)
     
     tmp, tmpl = test(directory)
