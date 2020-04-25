@@ -39,12 +39,12 @@ Confusion Matrix Showing the Performance of ENet on Test Set 2 : 704 Slices
 
 ## Quantitative Performance of ENet+ (ours)
 
-Confusion Matrix Showing the Performance of ENet on Test Set 2 : 704 Slices
+Confusion Matrix Showing the Performance of ENet+ on Test Set 2 : 704 Slices
 <p align="center">
   <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/testVOL3.png">
 </p>
 
-## Qualitative Performance of UNet and ENet+
+## Qualitative Performance
 
 <p align="center">
   <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/Visual.png">
