@@ -21,7 +21,7 @@ This folder contains the FOM of UNet and ENet.
 
 ## python files
 
-**trnENet.py** is the run file to train the ENet+ model. **tstENet.py** is the testing file for evaluation with ENet+, **enet.py** has model definition for enet and **myDataset.py** is data iterator.
+**trnENet+.py** is the run file to train the ENet+ model. **tstENet+.py** is the testing file for evaluation with ENet+, **enet.py** has model definition for enet and **myDataset.py** is data iterator.
 
 ## Quantitative Performance of UNet
 
