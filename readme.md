@@ -25,23 +25,23 @@ This folder contains the FOM of UNet and ENet.
 
 ## Quantitative Performance of UNet
 
-Confusion Matrix Showing the Performance of UNet on Test Set 2 : 704 Slices
+Confusion Matrix Showing the Performance of UNet on Test Set : 714 Slices
 <p align="center">
-  <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/test1VOL.png">
+  <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/UNet Test.png">
 </p>
 
 ## Quantitative Performance of ENet
 
-Confusion Matrix Showing the Performance of ENet on Test Set 2 : 704 Slices
+Confusion Matrix Showing the Performance of ENet on Test Set : 714 Slices
 <p align="center">
-  <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/testVOL3.1.png">
+  <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/ENet Testpng">
 </p>
 
 ## Quantitative Performance of ENet+ (ours)
 
-Confusion Matrix Showing the Performance of ENet+ on Test Set 2 : 704 Slices
+Confusion Matrix Showing the Performance of ENet+ on Test Set : 714 Slices
 <p align="center">
-  <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/testVOL3.png">
+  <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/ENet+ Test.png">
 </p>
 
 ## Qualitative Performance
