@@ -76,7 +76,7 @@ if config.gpu == True:
     net.cuda(config.gpuid)
     
 else:
-   net = ENet()
+   net = ENet(3)
    
 # Define the optimizer
 optimizer = optim.SGD(net.parameters(), lr=0.01)
@@ -210,11 +210,5 @@ plt.xlabel('epochs')
 plt.ylabel('FOM ')  
 plt.legend(loc="upper left") 
 plt.show()
-#plt.figure()
-#plt.plot(x, vall_loss ,label='Validatn')
-#plt.xlabel('epochs')
-#plt.ylabel('Val Loss ')                                  
-#plt.show()
-#                                 
 
 
