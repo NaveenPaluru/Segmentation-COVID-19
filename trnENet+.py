@@ -102,6 +102,8 @@ for j in range(config.epochs):
     for i,data in tqdm.tqdm(enumerate(trainloader)): 
         # start iterations
         images,trainLabels = Variable(data[0]),Variable(data[1])
+	
+	# Compute weights on mini batch
         ind2 = np.where(trainLabels==1)
         ind1 = np.where(trainLabels==0)
         ind3 = np.where(trainLabels==2)
@@ -188,7 +190,7 @@ for j in range(config.epochs):
     
     #save the model   
     os.chdir('../../')
-    torch.save(net.state_dict(),os.path.join(directory,"ENet_" + str(j+1) +"_model.pth"))
+    torch.save(net.state_dict(),os.path.join(directory,"ENetPlus_" + str(j+1) +"_model.pth"))
 	    
 
 # plot the training loss
