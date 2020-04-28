@@ -12,7 +12,7 @@ Dataset : [Link](http://medicalsegmentation.com/covid19/)
 
 ## savedModels
 
-Download the trained models from the google drive link below and place it inside the subfolder in the savedModels. Trained model are [here](https://drive.google.com/open?id=1wm3m-0Upjk6g8jxnNEIBWK686kf2SJZm) 
+Download the trained models from the google drive link below and place it inside the subfolder in the savedModels. Trained model is [here](https://drive.google.com/open?id=1wm3m-0Upjk6g8jxnNEIBWK686kf2SJZm) 
 
 
 ## results
