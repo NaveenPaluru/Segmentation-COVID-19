@@ -6,13 +6,7 @@ Created on Fri Apr 24 11:20:52 2020
 @author: naveen_p
 """
 
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Mar 10 12:07:48 2020
 
-@author: naveenpaluru
-"""
 
 import os,time
 import sklearn.metrics as metrics
