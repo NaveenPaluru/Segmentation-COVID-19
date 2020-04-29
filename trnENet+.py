@@ -2,8 +2,9 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Apr 24 11:20:52 2020
-
 @author: naveen_p
+
+Weights Findings snippet taken from : https://github.com/aqqush/CT_BET/blob/master/model_CT_SS.py
 """
 
 
