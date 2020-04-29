@@ -31,7 +31,7 @@ from torch.optim import lr_scheduler
 print ('*******************************************************')
 start_time=time.time()
 saveDir='savedModels/'
-saveDir2 = 'ENet_predictions/'
+saveDir2 = 'ENetPlus_predictions/'
 cwd=os.getcwd()
 directory=saveDir+datetime.now().strftime("%d%b_%I%M%P_")+'model'
 directory2 = saveDir2+datetime.now().strftime("%d%b_%I%M%P_")+'model'
