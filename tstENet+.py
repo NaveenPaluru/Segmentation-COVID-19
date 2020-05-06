@@ -109,8 +109,8 @@ if __name__ == '__main__':
    
     
     plt.tight_layout()
-    plt.xlabel('Target Class')    
-    plt.ylabel('Output Class') 
+    plt.ylabel('Target Class')    
+    plt.xlabel('Output Class') 
     plt.show()
         
 ##    
