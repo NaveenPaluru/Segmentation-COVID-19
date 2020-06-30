@@ -1,5 +1,5 @@
 
-# Anam-Net : Anamorphic Depth Embedding basedLight-Weight CNN for Segmentation of Anomaliesin COVID-19 Chest CT Images
+# Anam-Net : Anamorphic Depth Embedding based Light-Weight CNN for Segmentation of Anomaliesin COVID-19 Chest CT Images
 
 Folders and Files Descritions
 
@@ -22,7 +22,7 @@ Will be updated Soon.
 ## Quantitative Performance of UNet
 
 
-  <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/results/ENet+ Test.png">
+  <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/finalresults.png">
 </p>
 
 
@@ -40,3 +40,4 @@ Will be updated Soon.
 #### References
  1. [UNet](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28)
  2. [ENet](https://arxiv.org/abs/1606.02147)
+ 3. [UNet++](https://arxiv.org/abs/1807.10165)
