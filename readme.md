@@ -38,6 +38,6 @@ Will be updated Soon.
 *(PhD) CDS, MIG, IISc Bangalore,  email : naveenp@iisc.ac.in*
 
 #### References
- 1. [UNet](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28)
- 2. [ENet](https://arxiv.org/abs/1606.02147)
- 3. [UNet++](https://arxiv.org/abs/1807.10165)
+[UNet](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28), [ENet](https://arxiv.org/abs/1606.02147), [UNet++](https://arxiv.org/abs/1807.10165)
+[SegNet](https://arxiv.org/pdf/1511.00561.pdf), [Attention-UNet](https://arxiv.org/abs/1804.03999), [LedNet](https://arxiv.org/abs/1905.02423), [DeepLabV3+]
+(https://arxiv.org/abs/1802.02611)
