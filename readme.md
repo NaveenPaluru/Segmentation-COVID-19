@@ -1,5 +1,5 @@
 
-# Anam-Net : Anamorphic Depth Embedding based Light-Weight CNN for Segmentation of Anomaliesin COVID-19 Chest CT Images
+# Anam-Net : Anamorphic Depth Embedding based Light-Weight CNN for Segmentation of Anomalies in COVID-19 Chest CT Images
 
 Folders and Files Descritions
 
@@ -19,9 +19,8 @@ Will be updated Soon.
 
 **trnAnamNet.py** is the run file to train the ENet+ model. **tstAnamNet.py** is the testing file for evaluation, **AnamNet.py** has model definition and **myDataset.py** is data iterator. (Missing files will be updated soon.)
 
-## Quantitative Performance of UNet
-
-
+## Qualitative Performance of Various Deep Models on Segmenting COVID Anomalies
+</p>
   <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/finalresults.png">
 </p>
 
@@ -38,6 +37,5 @@ Will be updated Soon.
 *(PhD) CDS, MIG, IISc Bangalore,  email : naveenp@iisc.ac.in*
 
 #### References
-[UNet](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28), [ENet](https://arxiv.org/abs/1606.02147), [UNet++](https://arxiv.org/abs/1807.10165)
-[SegNet](https://arxiv.org/pdf/1511.00561.pdf), [Attention-UNet](https://arxiv.org/abs/1804.03999), [LedNet](https://arxiv.org/abs/1905.02423), [DeepLabV3+]
-(https://arxiv.org/abs/1802.02611)
+[UNet](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28), [ENet](https://arxiv.org/abs/1606.02147), [UNet++](https://arxiv.org/abs/1807.10165),
+[SegNet](https://arxiv.org/pdf/1511.00561.pdf), [Attention-UNet](https://arxiv.org/abs/1804.03999), [LedNet](https://arxiv.org/abs/1905.02423), [DeepLabV3+](https://arxiv.org/abs/1802.02611)
