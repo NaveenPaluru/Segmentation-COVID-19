@@ -19,8 +19,8 @@ Will be updated Soon.
 
 **trnAnamNet.py** is the run file to train the ENet+ model. **tstAnamNet.py** is the testing file for evaluation, **AnamNet.py** has model definition and **myDataset.py** is data iterator. (Missing files will be updated soon.)
 
-## Qualitative Performance of Various Deep Models on Segmenting COVID Anomalies
-</p align ="center">
+## Qualitative Performance of Various Deep Learning Models on Segmentation of the COVID-19 Anomalies
+<p align="center">
   <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/finalresults.png">
 </p>
 
