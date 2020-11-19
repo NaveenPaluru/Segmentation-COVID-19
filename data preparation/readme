@@ -1,7 +1,7 @@
 
 # dataPrepCTSlice.m
 
-% Data Preparation for Train and Test Set 1
+% Data Preparation for Training (Experiment 1 in Manuscript) 
 
 % Data Taken from: http://medicalsegmentation.com/covid19/
 % Data Download link :Training images as .nii.gz (151.8 Mb)  – 100 slices
@@ -12,7 +12,7 @@
 
 # dataPrepCTVolume.m
 
-% Data Preparation for Test Set 2
+% Data Preparation for Testing (Experiment 1 in Manuscript)
 
 % Data Taken from: http://medicalsegmentation.com/covid19/
 % Segmentation dataset nr. 2 (13th April) Image volumes (308 Mb) – 9 volumes, total of > 800 slices
