@@ -30,7 +30,7 @@ Will be updated Soon.
 
 #### Any query, please raise an issue or contact :
 
-*Dr. Phannendra  K. Yalavarthy* 
+*Dr. Phaneendra  K. Yalavarthy* 
 
 *Assoc.Prof, CDS, IISc Bangalore, email : yalavarthy@iisc.ac.in*
 
