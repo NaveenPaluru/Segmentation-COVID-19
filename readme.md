@@ -7,8 +7,10 @@ Folders and Files Descritions
 
 ## data preparation
 
-This folder contains two files : **dataPrepCTSlice.m**  for preparing training data and test set 1, **dataPrepCTVolume.m**
-for preparing test set 2. These files contain all necessary references for the datasets.
+This folder contains two files : **dataPrepCTSlice.m**  for preparing training data (experiment 1 in manuscript) and ,**dataPrepCTVolume.m**
+for preparing test data (experiment 1 in the manuscript) . 
+
+These files contain all necessary references for the datasets.
 
 Dataset : [Link](http://medicalsegmentation.com/covid19/)
 
