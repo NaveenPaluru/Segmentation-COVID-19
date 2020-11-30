@@ -23,7 +23,7 @@ Will be updated Soon.
 
 (Missing files will be updated soon.)
 
-## Qualitative Performance of Various Deep Learning Models on Segmentation of the COVID-19 Anomalies
+## Segmentation Results
 <p align="center">
   <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/finalresults.png">
 </p>
