@@ -1,5 +1,5 @@
 
-# Anam-Net : Anamorphic Depth Embedding based Light-Weight CNN for Segmentation of Anomalies in COVID-19 Chest CT Images
+# COVID-19 Anomaly Segmentation
 
 #### (Under Review at IEEE TNNLS (Fast Track : Covid 19 Papers))
 
