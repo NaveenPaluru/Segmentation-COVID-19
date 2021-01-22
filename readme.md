@@ -19,7 +19,7 @@ Dataset : [Link](http://medicalsegmentation.com/covid19/)
 This folder contains Android Application Details. Use mobiletorch.py to convert the trained model to its lite version. The app was developed in Android Studio.
 
 <p align="center">
-  <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/CovSeg.gif">
+  <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/CovSeg.gif" width="350" height="700">
 </p>
 
 
@@ -30,7 +30,7 @@ This folder contains Android Application Details. Use mobiletorch.py to convert 
 
 ## Segmentation Results
 <p align="center">
-  <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/finalresults.png" width="50" height="100">>
+  <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/finalresults.png">
 </p>
 
 
