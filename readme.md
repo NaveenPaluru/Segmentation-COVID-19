@@ -1,7 +1,7 @@
 
 # COVID-19 Anomaly Segmentation
 
-#### (Under Review at IEEE TNNLS (Fast Track : Covid 19 Papers))
+Naveen Paluru, Aveen Dayal, Havard B. Jenssen, Tomas Sakinis, Linga R. Cenkeramaddi, Jaya Prakash, and Phaneendra K. Yalavarthy, ["Anam-Net : Anamorphic Depth Embedding based Light-Weight CNN for Segmentation of Anomalies in COVID-19 Chest CT Images,"](http://cds.iisc.ac.in/faculty/yalavarthy/Paluru_IEEETNNLS_2021.pdf) IEEE Transactions on Neural Networks and Learning Systems (Fast Track: COVID-19 Focused Papers) 2021 (in press).
 
 Folders and Files Descritions
 
@@ -14,22 +14,24 @@ These files contain all necessary references for the datasets.
 
 Dataset : [Link](http://medicalsegmentation.com/covid19/)
 
-## savedModels
+## CovSeg
 
-Will be updated Soon.
+This folder contains Android Application Details. Use mobiletorch.py to convert the trained model to its lite version. The app was developed in Android Studio.
+
+<p align="center">
+  <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/CovSeg.gif">
+</p>
 
 
 ## python files
 
-**trnAnamNet.py** is the run file to train the ENet+ model. **tstAnamNet.py** is the testing file for evaluation, **AnamNet.py** has model definition and **myDataset.py** is data iterator. 
+**trnAnamNet.py** is the run file to train the model, **AnamNet.py** has model definition and **myDataset.py** is data iterator. 
 
-(Missing files will be updated soon.)
 
 ## Segmentation Results
 <p align="center">
   <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/finalresults.png">
 </p>
-
 
 
 #### Any query, please raise an issue or contact :
