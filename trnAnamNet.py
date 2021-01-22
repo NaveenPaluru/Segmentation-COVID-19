@@ -74,12 +74,12 @@ print('----------------------------------------------------------')
 # Create the object for the network
 
 if config.gpu == True:    
-    net = MiniUNet()
+    net = AnamNet()
     net.cuda(config.gpuid)
     class_weights = torch.FloatTensor(class_weights).cuda(config.gpuid)
     
 else:
-   net = MiniUNet()
+   net = AnamNet()
    
 # Define the optimizer
 optimizer = optim.Adam(net.parameters(),lr=5e-4)
