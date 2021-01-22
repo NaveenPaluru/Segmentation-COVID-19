@@ -8,7 +8,7 @@ Folders and Files Descritions
 ## data preparation
 
 This folder contains two files : **dataPrepCTSlice.m**  for preparing training data (experiment 1 in manuscript) and ,**dataPrepCTVolume.m**
-for preparing test data (experiment 1 in the manuscript) . 
+for preparing the test data ( for experiment 1 and experiment 3 in the manuscript). 
 
 These files contain all necessary references for the datasets.
 
@@ -30,7 +30,7 @@ This folder contains Android Application Details. Use mobiletorch.py to convert 
 
 ## Segmentation Results
 <p align="center">
-  <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/finalresults.png">
+  <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/finalresults.png" width="50" height="100">>
 </p>
 
 
