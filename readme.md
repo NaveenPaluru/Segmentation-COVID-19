@@ -23,7 +23,7 @@ This folder contains Android Application Details. Use mobiletorch.py to convert 
 </p>
 
 ```diff
-## Disclaimer
+- ## Disclaimer
 ```
 
 The software and applications developed are not intended, nor should they be construed, as claims that this can be used to diagnose,treat, mitigate, cure, prevent or otherwise be used for any disease or medical condition. The software/application has not been clinically proven or evaluated.
