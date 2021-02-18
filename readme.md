@@ -22,10 +22,10 @@ This folder contains Android Application Details. Use mobiletorch.py to convert 
   <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/CovSeg.gif" width="350" height="700">
 </p>
 
-<font color="red"> 
+
 
 ## Disclaimer
-The software and applications developed are not intended, nor should they be construed, as claims that this can be used to diagnose, treat, mitigate, cure, prevent or otherwise be used for any disease or medical condition. The software/application has not been clinically proven or evaluated.
+<font color="red"> The software and applications developed are not intended, nor should they be construed, as claims that this can be used to diagnose, treat, mitigate, cure, prevent or otherwise be used for any disease or medical condition. The software/application has not been clinically proven or evaluated.
  </font>
 
 ## python files
