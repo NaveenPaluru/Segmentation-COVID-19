@@ -1,4 +1,4 @@
-% Data Preparation for Test Set 2
+% 
 
 % Data Taken from: http://medicalsegmentation.com/covid19/
 % Segmentation dataset nr. 2 (13th April) Image volumes (308 Mb) – 9 volumes, total of > 800 slices
@@ -136,4 +136,3 @@ end
 % Finally Save IMG and LAB in testVOL.mat file. This mat file should have the:
 % IMG : 512x512x704
 % LAB : 512x512x704
-% Use testVOL.mat file as Test Set 2.% For Test Set 1 check dataPrepCTSlices.m
