@@ -116,16 +116,8 @@ for i = 1:100
       end
   
       
-      % Finally split inp, lab into train and test. Train data 270 slices
-      % and Test Data set 1 with  30 slices.
-      
-      
-      % train.mat should have inp : 512x512x270, lab:512x512x270
-      % test.mat  should have inp : 512x512x 30, lab:512x512x 30
-      % test.mat is the Test Set 1.
-      % For Test Set 2 check dataPrepCTVolumes.m
-
-           
+      % Train data 270 slices
+                
 end
 
 
