@@ -1,5 +1,5 @@
 
-# dataPrepCTSlice.m
+# data_1.m
 
 % Data Preparation for Training (Experiment 1 in Manuscript) 
 
@@ -12,7 +12,7 @@
 % (0.3Mb). 
 
 
-# dataPrepCTVolume.m
+# data_2.m
 
 % Dataset 2
 
@@ -24,3 +24,10 @@
 %                                         Lung masks of (1.0 Mb) – includes  > 700 annotated slices
 
 % lung masks by Johannes Hofmanninger:  https://github.com/JoHof/lungmask
+
+
+# data_3.m
+
+% Dataset 3
+
+% Data Taken from: https://zenodo.org/record/3757476#.Xp0FhB9fgUE
