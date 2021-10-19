@@ -20,13 +20,13 @@ trnEXP-2.py - train file experiment 2
 anamNet.py has the  model definition 
 
 myDataset.py is the the data iterator
-
 ```
+
 ## CovSeg
 
 This folder contains Android Application Details. Use mobiletorch.py to convert the trained model to its lite version. The android app (CovSeg) was developed in Android Studio.
 
-**Disclaimer
+**Disclaimer**
 
 <p align="justify" markdown="1">
 The software and applications developed are not intended, nor should they be construed, as claims that this can be used to diagnose,treat, mitigate, cure, prevent or otherwise be used for any disease or medical condition. The software/application has not been clinically proven or evaluated.
@@ -39,7 +39,7 @@ The software and applications developed are not intended, nor should they be con
 
 
 
-## Segmentation Results
+## Results
 <p align="center">
   <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/finalresults.png">
 </p>
