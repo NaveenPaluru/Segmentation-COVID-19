@@ -3,7 +3,7 @@
 <p align="justify" markdown="1">
 Naveen Paluru, Aveen Dayal, Havard B. Jenssen, Tomas Sakinis, Linga R. Cenkeramaddi, Jaya Prakash, and Phaneendra K. Yalavarthy, "Anam-Net : Anamorphic Depth Embedding based Light-Weight CNN for Segmentation of Anomalies in COVID-19 Chest CT Images," IEEE Transactions on Neural Networks and Learning Systems (Fast Track: COVID-19 Focused Papers), 32(3), 932-946 (2021). 
 </p>
-([manuscript link](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9349153&tag=1))
+[manuscript link](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9349153&tag=1)
 
 # Folders and Files Descriptions
 
