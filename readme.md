@@ -10,9 +10,9 @@ Naveen Paluru, Aveen Dayal, Havard B. Jenssen, Tomas Sakinis, Linga R. Cenkerama
 
 ## data preparation
 
-This folder contain all necessary references for the datasets.
-
-Dataset : [Link](http://medicalsegmentation.com/covid19/)
+<p align="justify" markdown="1">
+This folder contain all the necessary details of pre-processing and annotations of the COVID-19 infection. Please go through the readme file in this folder for further details.
+</p>
 
 ## CovSeg
 
@@ -51,6 +51,3 @@ This folder contains Android Application Details. Use mobiletorch.py to convert 
 
 *(PhD) CDS, MIG, IISc Bangalore,  email : naveenp@iisc.ac.in*
 
-#### References
-[UNet](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28), [ENet](https://arxiv.org/abs/1606.02147), [UNet++](https://arxiv.org/abs/1807.10165),
-[SegNet](https://arxiv.org/pdf/1511.00561.pdf), [Attention-UNet](https://arxiv.org/abs/1804.03999), [LedNet](https://arxiv.org/abs/1905.02423), [DeepLabV3+](https://arxiv.org/abs/1802.02611)
