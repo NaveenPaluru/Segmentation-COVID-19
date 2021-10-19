@@ -193,7 +193,7 @@ class AnamNet(nn.Module):
         # Down 1
         x = self.conv1_block(x)
         #print('after conv1', x.shape)
-        conv1_out = x  # Save out1
+        conv1_out = x 
         conv1_dim = x.shape[2]
         x = self.max1(x)
         #print('after pool1', x.shape)
@@ -233,10 +233,7 @@ class AnamNet(nn.Module):
         #print('after  up_1', x.shape)
         x = self.bottleneck4(x)
         #print('after bnck4', x.shape)
-        lower = int((conv4_dim - x.shape[2]) / 2)
-        upper = int(conv4_dim - lower)
-        conv4_out_modified = conv4_out[:, :, lower:upper, lower:upper]
-        x = torch.cat([x, conv4_out_modified], dim=1)
+        x = torch.cat([x, conv4_out], dim=1)
         #print('after cat_1',x.shape)        
         x = self.conv_up_1(x)
         #print('after conv1', x.shape)
@@ -246,10 +243,7 @@ class AnamNet(nn.Module):
         #print('after  up_2', x.shape)
         x = self.bottleneck5(x)
         #print('after bnck5', x.shape)
-        lower = int((conv3_dim - x.shape[2]) / 2)
-        upper = int(conv3_dim - lower)
-        conv3_out_modified = conv3_out[:, :, lower:upper, lower:upper]
-        x = torch.cat([x, conv3_out_modified], dim=1)
+        x = torch.cat([x, conv3_out], dim=1)
         #print('after cat_2', x.shape)
         x = self.conv_up_2(x)
         #print('after conv2', x.shape)
@@ -259,10 +253,7 @@ class AnamNet(nn.Module):
         #print('after  up_3', x.shape)
         x = self.bottleneck6(x)
         #print('after bnck6', x.shape)
-        lower = int((conv2_dim - x.shape[2]) / 2)
-        upper = int(conv2_dim - lower)
-        conv2_out_modified = conv2_out[:, :, lower:upper, lower:upper]
-        x = torch.cat([x, conv2_out_modified], dim=1)
+        x = torch.cat([x, conv2_out], dim=1)
         #print('after cat_3', x.shape)
         x = self.conv_up_3(x)
         #print('after conv3', x.shape)
@@ -270,10 +261,7 @@ class AnamNet(nn.Module):
         # Up 4
         x = self.up_4(x)
         #print('after  up_3', x.shape)
-        lower = int((conv1_dim - x.shape[2]) / 2)
-        upper = int(conv1_dim - lower)
-        conv1_out_modified = conv1_out[:, :, lower:upper, lower:upper]
-        x = torch.cat([x, conv1_out_modified], dim=1)
+        x = torch.cat([x, conv1_out], dim=1)
         #print('after cat_4', x.shape)
         x = self.conv_up_4(x)
         #print('after conv4', x.shape)
