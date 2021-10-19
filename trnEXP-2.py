@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Apr 24 11:20:52 2020
-
-@author: naveen_p
-"""
 
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
@@ -45,50 +38,45 @@ if not os.path.exists(directory):
 
 config  = Config()
 
-# # load the  data
+# Training Data
 
 data1 = scipy.io.loadmat('set2.mat')
 inp1  = data1['inp']
 lab1  = data1['lab']
-traininp1 =np.reshape(np.transpose(inp1,(2,0,1)),(694,512,512,1))
+traininp1 =np.reshape(np.transpose(inp1,(2,0,1)),(694,512,512,1))  # set2.mat has 694 slices
 trainlab1 =np.transpose(lab1,(2,0,1))
-
 data2 = scipy.io.loadmat('set3.mat')
 inp2  = data2['inp']
 lab2  = data2['lab']
-traininp2 =np.reshape(np.transpose(inp2,(2,0,1)),(740,512,512,1))
+traininp2 =np.reshape(np.transpose(inp2,(2,0,1)),(740,512,512,1))  # set3.mat has 740 slices
 trainlab2 =np.transpose(lab2,(2,0,1))
-
 traininp = np.concatenate((traininp1,traininp2), axis = 0)
 trainlab = np.concatenate((trainlab1,trainlab2), axis = 0)
 
+# Validation Data
 
 data3 = scipy.io.loadmat('set1.mat')
 Valinp  = data3['inp']
 Vallab  = data3['lab']
-Valinp =np.reshape( np.transpose(Valinp,(2,0,1)),(871,512,512,1))
+Valinp =np.reshape( np.transpose(Valinp,(2,0,1)),(871,512,512,1))  # set1.mat has 871 slices
 Vallab =np.transpose(Vallab,(2,0,1))
-
-
        
 
-transform = transforms.Compose([transforms.ToTensor()        ])
+transform = transforms.Compose([transforms.ToTensor()])
 
 # make the data iterator for training data
 train_data = myDataset(traininp,trainlab, transform)
 trainloader = torch.utils.data.DataLoader(train_data, batch_size=config.batchsize, shuffle=True, num_workers=2)
 
-
 val_data  = myDataset(Valinp, Vallab, transform)
 valloader = torch.utils.data.DataLoader(val_data, batch_size=config.batchsize, shuffle=True, num_workers=2)
 
-#
+# weights for the class labels
+
 labels = trainlab.flatten()
 class_count = np.bincount(labels, minlength=3)
-propensity_score = class_count/labels.size ###
-class_weights = 1 / propensity_score #########
-
-
+propensity_score = class_count/labels.size 
+class_weights = 1 / propensity_score 
 
 print('----------------------------------------------------------')
 #%%
@@ -97,8 +85,7 @@ print('----------------------------------------------------------')
 if config.gpu == True:    
     net = AnamNet()
     net.cuda(config.gpuid)
-    class_weights = torch.FloatTensor(class_weights).cuda(config.gpuid)
-    
+    class_weights = torch.FloatTensor(class_weights).cuda(config.gpuid)    
 else:
    net = AnamNet()
    
@@ -108,7 +95,6 @@ scheduler = lr_scheduler.StepLR(optimizer, step_size=33, gamma=0.1)
 
 # Define the loss function
 criterion = nn.CrossEntropyLoss(weight=class_weights)
-
 
 # Iterate over the training dataset
 train_loss = []
@@ -140,8 +126,7 @@ for j in range(config.epochs):
         loss.backward()
         
         # Accumulate loss for current minibatch
-        runtrainloss += loss.item()
-        
+        runtrainloss += loss.item()        
         
         # update the parameters
         optimizer.step()
@@ -163,33 +148,27 @@ for j in range(config.epochs):
         output = net(images)
        
         #compute loss
-        loss   = criterion(output, Labels)        
-                
+        loss   = criterion(output, Labels)                
              
         # Accumulate loss for current minibatch
         runvalloss += loss.item()
         
           
-    # print loss after every epoch
-    
+    # print loss after every epoch    
    
     print('Validatn - Epoch {}/{}, loss:{:.4f} '.format(j+1, config.epochs, runvalloss/len(valloader)))
     print('----------------------------------------------------------')
 
     train_loss.append(runtrainloss/len(trainloader))
-    val_loss.append(runvalloss/len(valloader))
-    
-      
+    val_loss.append(runvalloss/len(valloader))     
     
     #save the model  
-    torch.save(net.state_dict(),os.path.join(directory,"AnamNet_" + str(j+1) +"_model.pth"))
-            
+    torch.save(net.state_dict(),os.path.join(directory,"AnamNet_" + str(j+1) +"_model.pth"))            
 
 # Save the train stats
 
 np.save(directory+'/trnloss.npy',np.array(train_loss) )
 np.save(directory+'/valloss.npy',np.array(val_loss) )
-
 
 # plot the training loss
 
@@ -200,9 +179,6 @@ plt.plot(x,val_loss,label='Validation')
 plt.xlabel('epochs')
 plt.ylabel('Train Loss ') 
 plt.legend(loc="upper left")  
-plt.show()
-
-
-                      
+plt.show()                
 
 
