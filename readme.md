@@ -15,7 +15,7 @@ Naveen Paluru, Aveen Dayal, Havard B. Jenssen, Tomas Sakinis, Linga R. Cenkerama
 This folder contain all the necessary details of pre-processing and annotations of the COVID-19 infection. Please go through the readme file in this folder for further details.
 </p>
 
-## python files
+### python files
 ```md
 trnEXP-1.py - train file experiment 1
 
@@ -26,7 +26,7 @@ anamNet.py has the  model definition
 myDataset.py is the the data iterator
 ```
 
-## CovSeg
+### CovSeg Application
 
 This folder contains Android Application Details. Use mobiletorch.py to convert the trained model to its lite version. The android app (CovSeg) was developed in Android Studio.
 
