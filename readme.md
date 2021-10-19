@@ -13,7 +13,14 @@ This folder contain all the necessary details of pre-processing and annotations 
 
 ## python files
 ```md
-trnEXP-1.py and trnEXP-2.py are the run files to train the model, anamNet.py has the model definition and myDataset.py is the data iterator. 
+trnEXP-1.py - train file experiment 1
+
+trnEXP-2.py - train file experiment 2
+
+anamNet.py has the  model definition 
+
+myDataset.py is the the data iterator
+
 ```
 ## CovSeg
 
