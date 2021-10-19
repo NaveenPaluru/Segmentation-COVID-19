@@ -1,14 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Fri Apr 24 11:20:52 2020
-
-@author: naveen_p
-"""
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
 Created on Tue Mar 10 12:07:48 2020
 
 @author: naveenpaluru
@@ -64,10 +56,8 @@ trainloader = torch.utils.data.DataLoader(train_data, batch_size=config.batchsiz
 #
 labels = trainlab.flatten()
 class_count = np.bincount(labels, minlength=3)
-propensity_score = class_count/labels.size ###
-class_weights = 1 / propensity_score #########
-
-
+propensity_score = class_count/labels.size 
+class_weights = 1 / propensity_score
 
 print('----------------------------------------------------------')
 #%%
@@ -76,8 +66,7 @@ print('----------------------------------------------------------')
 if config.gpu == True:    
     net = AnamNet()
     net.cuda(config.gpuid)
-    class_weights = torch.FloatTensor(class_weights).cuda(config.gpuid)
-    
+    class_weights = torch.FloatTensor(class_weights).cuda(config.gpuid)    
 else:
    net = AnamNet()
    
@@ -87,14 +76,9 @@ scheduler = lr_scheduler.StepLR(optimizer, step_size=33, gamma=0.1)
 
 # Define the loss function
 criterion = nn.CrossEntropyLoss(weight=class_weights)
-#criterion = nn.CrossEntropyLoss()
-
 
 # Iterate over the training dataset
 train_loss = []
-sens = []
-spec = []
-acc  = []
 img_rows = 512
 img_cols = 512
 numImgs  = 5 # should be same as mini batch size
@@ -125,22 +109,18 @@ for j in range(config.epochs):
         loss.backward()
         
         # Accumulate loss for current minibatch
-        runtrainloss += loss.item()
-        
+        runtrainloss += loss.item()        
         
         # update the parameters
-        optimizer.step()       
-        
+        optimizer.step()               
        
     # print loss after every epoch
     
     print('Training - Epoch {}/{}, loss:{:.4f} '.format(j+1, config.epochs, runtrainloss/len(trainloader)))
-    train_loss.append(runtrainloss/len(trainloader))
-    
+    train_loss.append(runtrainloss/len(trainloader))    
        
     # Take a step for scheduler
-    scheduler.step()
-    
+    scheduler.step()    
     
     #save the model  
     torch.save(net.state_dict(),os.path.join(directory,"AnamNet_" + str(j+1) +"_model.pth"))
