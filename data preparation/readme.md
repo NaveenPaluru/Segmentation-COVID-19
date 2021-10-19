@@ -30,4 +30,10 @@
 
 % Dataset 3
 
+% Data Preparation for Experiment 2 in the Manuscript
+
+<p align="justify" markdown="1">
+This snippet pre-processes the 20 patients data (similar to experiment 1). After exectuing this snippet, the annotation files and the corresponding input CT slices were split into 4 folds. 
+</p>
+
 % Data Taken from: https://zenodo.org/record/3757476#.Xp0FhB9fgUE
