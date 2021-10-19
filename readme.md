@@ -5,9 +5,6 @@ Naveen Paluru, Aveen Dayal, Havard B. Jenssen, Tomas Sakinis, Linga R. Cenkerama
 </p>
 <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9349153&tag=1">[manuscript]</a>
 
-
-## Folders and Files Descriptions
-
 ### data preparation
 
 <p align="justify" markdown="1">
@@ -16,8 +13,8 @@ This folder contain all the necessary details of pre-processing and annotations 
 
 ## python files
 ```md
-trnEXP-1.py** and **trnEXP-2.py** are the run files to train the model, AnamNet.py has model definition and myDataset.py is data iterator. 
-
+trnEXP-1.py and trnEXP-2.py are the run files to train the model, anamNet.py has the model definition and myDataset.py is the data iterator. 
+```
 ## CovSeg
 
 This folder contains Android Application Details. Use mobiletorch.py to convert the trained model to its lite version. The android app (CovSeg) was developed in Android Studio.
