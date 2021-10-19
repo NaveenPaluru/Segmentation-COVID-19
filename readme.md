@@ -15,7 +15,7 @@ Naveen Paluru, Aveen Dayal, Havard B. Jenssen, Tomas Sakinis, Linga R. Cenkerama
 This folder contain all the necessary details of pre-processing and annotations of the COVID-19 infection. Please go through the readme file in this folder for further details.
 </p>
 
-### python files
+## python files
 ```md
 trnEXP-1.py - train file experiment 1
 
