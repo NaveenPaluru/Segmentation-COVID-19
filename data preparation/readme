@@ -1,20 +1,17 @@
-
 # data_1.m
+% Dataset1
 
 Data Preparation for Training (Experiment 1 in Manuscript) 
-
-Dataset 1
 
 % Data Taken from: http://medicalsegmentation.com/covid19/
 % Data Download link :Training images as .nii.gz (151.8 Mb)  – 100 slices
 %                     Training  masks as .nii.gz (1.4 Mb)    – 100 masks
 % lung masks by Johannes Hofmanninger: Lung masks as .nii.gz - 100 masks
 % (0.3Mb). 
-
+___________________________________________________________________________
 
 # data_2.m
-
-% Dataset 2
+% Dataset2
 
 % Data Preparation for Testing (Experiment 1 in Manuscript)
 
@@ -22,13 +19,10 @@ Dataset 1
 % Segmentation dataset nr. 2 (13th April) Image volumes (308 Mb) – 9 volumes, total of > 800 slices
 %                                         Covid19 masks (0.3 Mb) – includes  > 350 annotated slices
 %                                         Lung masks of (1.0 Mb) – includes  > 700 annotated slices
-
-% lung masks by Johannes Hofmanninger:  https://github.com/JoHof/lungmask
-
+_____________________________________________________________________________
 
 # data_3.m
-
-% Dataset 3
+% Dataset3
 
 % Data Preparation for Experiment 2 in the Manuscript
 
