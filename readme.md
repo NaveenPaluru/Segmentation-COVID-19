@@ -5,6 +5,10 @@ Naveen Paluru, Aveen Dayal, Havard B. Jenssen, Tomas Sakinis, Linga R. Cenkerama
 </p>
 <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9349153&tag=1">[manuscript]</a>
 
+<p align="center">
+  <img src="https://github.com/NaveenPaluru/Segmentation-COVID-19/blob/master/architecture.png">
+</p>
+
 ### data preparation
 
 <p align="justify" markdown="1">
