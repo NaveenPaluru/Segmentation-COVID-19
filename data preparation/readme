@@ -19,12 +19,9 @@ Data Preparation for Training (Experiment 1 in Manuscript)
 %                                         Covid19 masks (0.3 Mb) – includes  > 350 annotated slices
 %                                         Lung masks of (1.0 Mb) – includes  > 700 annotated slices
 
-
 # data_3.m
 % Dataset3
 
 % Data Preparation for Experiment 2 in the Manuscript
 
-This snippet pre-processes the 20 patients data (similar to experiment 1).  
-
-% Data Taken from: https://zenodo.org/record/3757476#.Xp0FhB9fgUE
+% Data-https://zenodo.org/record/3757476#.Xp0FhB9fgUE
