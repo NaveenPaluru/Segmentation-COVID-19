@@ -6,17 +6,17 @@ Naveen Paluru, Aveen Dayal, Havard B. Jenssen, Tomas Sakinis, Linga R. Cenkerama
 <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9349153&tag=1">[manuscript]</a>
 
 
-# Folders and Files Descriptions
+## Folders and Files Descriptions
 
-## data preparation
+### data preparation
 
 <p align="justify" markdown="1">
 This folder contain all the necessary details of pre-processing and annotations of the COVID-19 infection. Please go through the readme file in this folder for further details.
 </p>
 
 ## python files
->
-**trnEXP-1.py** and **trnEXP-2.py** are the run files to train the model, **AnamNet.py** has model definition and **myDataset.py** is data iterator. 
+```md
+trnEXP-1.py** and **trnEXP-2.py** are the run files to train the model, AnamNet.py has model definition and myDataset.py is data iterator. 
 
 ## CovSeg
 
