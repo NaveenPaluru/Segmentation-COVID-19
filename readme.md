@@ -1,6 +1,6 @@
 
 # COVID-19 Anomaly Segmentation
- <dt>*Naveen Paluru, Aveen Dayal, Havard B. Jenssen, Tomas Sakinis, Linga R. Cenkeramaddi, Jaya Prakash, and Phaneendra K. Yalavarthy, ["Anam-Net : Anamorphic Depth Embedding based Light-Weight CNN for Segmentation of Anomalies in COVID-19 Chest CT Images,"](http://cds.iisc.ac.in/faculty/yalavarthy/Paluru_IEEETNNLS_2021.pdf) IEEE Transactions on Neural Networks and Learning Systems (Fast Track: COVID-19 Focused Papers), 32(3), 932-946 (2021).*</dt>
+***Naveen Paluru, Aveen Dayal, Havard B. Jenssen, Tomas Sakinis, Linga R. Cenkeramaddi, Jaya Prakash, and Phaneendra K. Yalavarthy, ["Anam-Net : Anamorphic Depth Embedding based Light-Weight CNN for Segmentation of Anomalies in COVID-19 Chest CT Images,"](http://cds.iisc.ac.in/faculty/yalavarthy/Paluru_IEEETNNLS_2021.pdf) IEEE Transactions on Neural Networks and Learning Systems (Fast Track: COVID-19 Focused Papers), 32(3), 932-946 (2021).***
         
 
 
