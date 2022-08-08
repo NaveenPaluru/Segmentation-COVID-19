@@ -43,8 +43,8 @@ data = scipy.io.loadmat('train.mat')
 inp  = data['inp']
 lab  = data['lab']
 
-traininp =np.reshape( np.transpose(inp,(2,0,1)),(270,512,512,1))
-trainlab =np.reshape( np.transpose(lab,(2,0,1)),(270,512,512,1))       
+traininp = np.transpose(inp,(2,0,1))
+trainlab = np.transpose(lab,(2,0,1))      
 
 transform = transforms.Compose([transforms.ToTensor(),
             ])
@@ -100,7 +100,7 @@ for j in range(config.epochs):
         output = net(images)
        
         #compute loss
-        loss   = criterion(output, trainLabels.squeeze())        
+        loss   = criterion(output, trainLabels)        
                 
         # make gradients zero
         optimizer.zero_grad()
