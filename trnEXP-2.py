@@ -43,13 +43,15 @@ config  = Config()
 data1 = scipy.io.loadmat('set2.mat')
 inp1  = data1['inp']
 lab1  = data1['lab']
-traininp1 =np.reshape(np.transpose(inp1,(2,0,1)),(694,512,512,1))  # set2.mat has 694 slices
+traininp1 =np.transpose(inp1,(2,0,1))
 trainlab1 =np.transpose(lab1,(2,0,1))
+
 data2 = scipy.io.loadmat('set3.mat')
 inp2  = data2['inp']
 lab2  = data2['lab']
-traininp2 =np.reshape(np.transpose(inp2,(2,0,1)),(740,512,512,1))  # set3.mat has 740 slices
+traininp2 =np.transpose(inp2,(2,0,1))
 trainlab2 =np.transpose(lab2,(2,0,1))
+
 traininp = np.concatenate((traininp1,traininp2), axis = 0)
 trainlab = np.concatenate((trainlab1,trainlab2), axis = 0)
 
@@ -58,7 +60,7 @@ trainlab = np.concatenate((trainlab1,trainlab2), axis = 0)
 data3 = scipy.io.loadmat('set1.mat')
 Valinp  = data3['inp']
 Vallab  = data3['lab']
-Valinp =np.reshape( np.transpose(Valinp,(2,0,1)),(871,512,512,1))  # set1.mat has 871 slices
+Valinp =np.transpose(Valinp,(2,0,1))
 Vallab =np.transpose(Vallab,(2,0,1))
        
 
