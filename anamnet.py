@@ -96,9 +96,7 @@ class AnamNet(nn.Module):
             nn.BatchNorm2d(64),
             nn.ReLU(inplace=True),
             )
-        self.max1 = nn.MaxPool2d(kernel_size=2, stride=2)
-        
-        # BottleNeck 1
+        self.max1 = nn.MaxPool2d(kernel_size=2, stride=2)         
         self.bottleneck1 = Bottleneck(64)
 
 
@@ -109,9 +107,7 @@ class AnamNet(nn.Module):
             nn.BatchNorm2d(128),
             nn.ReLU(inplace=True),
         )
-        self.max2 = nn.MaxPool2d(kernel_size=2, stride=2)
-        
-        # BottleNeck 2
+        self.max2 = nn.MaxPool2d(kernel_size=2, stride=2)       
         self.bottleneck2 = Bottleneck(128)
 
         # Conv block 3 - Down 3
@@ -121,9 +117,7 @@ class AnamNet(nn.Module):
             nn.BatchNorm2d(256),
             nn.ReLU(inplace=True),
         )
-        self.max3 = nn.MaxPool2d(kernel_size=2, stride=2)
-        
-        # BottleNeck 3
+        self.max3 = nn.MaxPool2d(kernel_size=2, stride=2)       
         self.bottleneck3 = Bottleneck(256)
 
         # Conv block 4 - Down 4
@@ -134,6 +128,7 @@ class AnamNet(nn.Module):
             nn.ReLU(inplace=True),
         )
         self.max4 = nn.MaxPool2d(kernel_size=2, stride=2)
+
 
         # Up 1
         self.up_1 = nn.ConvTranspose2d(in_channels=256, out_channels=256, kernel_size=2, stride=2)
@@ -147,6 +142,7 @@ class AnamNet(nn.Module):
             nn.ReLU(inplace=True),
         )
 
+
         # Up 2
         self.up_2 = nn.ConvTranspose2d(in_channels=256, out_channels=256, kernel_size=2, stride=2)
         
@@ -158,6 +154,7 @@ class AnamNet(nn.Module):
             nn.BatchNorm2d(256),
             nn.ReLU(inplace=True),
         )
+
 
         # Up 3
         self.up_3 = nn.ConvTranspose2d(in_channels=256, out_channels=128, kernel_size=2, stride=2)
@@ -171,6 +168,7 @@ class AnamNet(nn.Module):
             nn.ReLU(inplace=True),
         )
 
+
         # Up 4
         self.up_4 = nn.ConvTranspose2d(in_channels=128, out_channels=64, kernel_size=2, stride=2)
 
@@ -182,14 +180,19 @@ class AnamNet(nn.Module):
             nn.ReLU(inplace=True),
         )
 
+
         # Final output
         self.conv_final = nn.Conv2d(in_channels=64, out_channels=3,
                                     kernel_size=1, padding=0, stride=1)
 
     def forward(self, x):
-        
+
+        #---------------------------------------------------------------------1
         #print('inputTensor', x.shape)
-        #---------------------------------------------------------------------
+
+        #                            ENCODER
+
+        #--------------------------------------------------------------------64
         # Down 1
         x = self.conv1_block(x)
         #print('after conv1', x.shape)
@@ -197,9 +200,11 @@ class AnamNet(nn.Module):
         conv1_dim = x.shape[2]
         x = self.max1(x)
         #print('after pool1', x.shape)
-        #--------------------------------------------------------------------
         x = self.bottleneck1(x)
         #print('after bnck1', x.shape)
+
+
+        #-------------------------------------------------------------------128
         # Down 2
         x = self.conv2_block(x)
         #print('after conv2', x.shape)
@@ -207,9 +212,11 @@ class AnamNet(nn.Module):
         conv2_dim = x.shape[2]
         x = self.max2(x)
         #print('after pool2', x.shape)
-        #-------------------------------------------------------------------
         x = self.bottleneck2(x)
         #print('after bnck2', x.shape)
+
+
+        #-------------------------------------------------------------------256
         # Down 3
         x = self.conv3_block(x)
         #print('after conv3', x.shape)
@@ -217,9 +224,11 @@ class AnamNet(nn.Module):
         conv3_dim = x.shape[2]
         x = self.max3(x)
         #print('after pool3', x.shape)
-        #------------------------------------------------------------------
         x = self.bottleneck3(x)
         #print('after bnck3', x.shape)
+
+
+        #------------------------------------------------------------------256
         # Down 4
         x = self.conv4_block(x)
         #print('after conv4', x.shape)
@@ -227,7 +236,12 @@ class AnamNet(nn.Module):
         conv4_dim = x.shape[2]
         x = self.max4(x)
         #print('after pool4', x.shape)
-        #----------------------------------------------------------------        
+
+        
+
+        #                             DECODER
+
+        #-----------------------------------------------------------------256        
         # Up 1
         x = self.up_1(x)
         #print('after  up_1', x.shape)
@@ -237,7 +251,9 @@ class AnamNet(nn.Module):
         #print('after cat_1',x.shape)        
         x = self.conv_up_1(x)
         #print('after conv1', x.shape)
-        #-----------------------------------------------------------------
+
+
+        #-----------------------------------------------------------------256
         # Up 2
         x = self.up_2(x)
         #print('after  up_2', x.shape)
@@ -247,7 +263,9 @@ class AnamNet(nn.Module):
         #print('after cat_2', x.shape)
         x = self.conv_up_2(x)
         #print('after conv2', x.shape)
-        #----------------------------------------------------------------
+
+
+        #----------------------------------------------------------------128
         # Up 3
         x = self.up_3(x)
         #print('after  up_3', x.shape)
@@ -257,7 +275,9 @@ class AnamNet(nn.Module):
         #print('after cat_3', x.shape)
         x = self.conv_up_3(x)
         #print('after conv3', x.shape)
-        #----------------------------------------------------------------
+
+
+        #----------------------------------------------------------------64
         # Up 4
         x = self.up_4(x)
         #print('after  up_3', x.shape)
@@ -265,10 +285,12 @@ class AnamNet(nn.Module):
         #print('after cat_4', x.shape)
         x = self.conv_up_4(x)
         #print('after conv4', x.shape)
+
+
+        #----------------------------------------------------------------3
         # Final output
         x = self.conv_final(x)
         #print('Finaloutshape',x.shape)
-        #-----------------------------------------------------------------
         return x
 
     
